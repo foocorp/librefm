@@ -1,0 +1,404 @@
+#artist-header h1 {
+    font-size: 30px;
+}
+
+img.neighbour {width: 64px; height: 64px;}
+
+#album-header h1 {
+    font-size: 30px;
+}
+
+#track-header h1 {
+    font-size: 24px;
+}
+
+.margin-top {
+    margin-top: 10px;
+}
+
+.tagcloud {
+	text-align:center;
+}
+
+.tagcloud li {
+        border-radius:5px;
+	background-color:rgba(0,0,0,0.3);
+	color: #FFFFFF;
+	padding: 5px 5px;
+	display:inline-block;
+}
+.tagcloud li a {
+       text-decoration:none;
+       color: #FFFFFF;
+}
+
+.tagcloud a:hover,a:focus {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+
+/* ==============
+ * DEV
+ * ==============*/
+
+.submenu li, .inline-menu li {
+	display:inline-block;
+}
+
+.submenu li.active, .inline-menu li.active {
+	text-decoration:underline;
+}
+
+table.library {
+	width:100%;
+
+}
+
+.library td {
+	padding:2px;
+}
+
+.library .icon {
+	width: 16px;
+}
+
+.library .image {
+	width:24px;
+}
+
+.library .count {
+	width:50px;
+	text-align:center;
+}
+.library .time {
+	white-space:nowrap;
+	text-align:center;
+	width:100px;
+}
+
+.library .icon-heart {
+	background-image:url("/themes/kaboot-bs3/img/love-small.png");
+	background-repeat:no-repeat;
+	background-position:center;
+}
+
+.library .icon-music {
+}
+
+.library .icon-tag {
+}
+
+.library .image img {
+	width:24px;
+	height:24px;
+}
+
+.library tr .buttons form {
+	visibility:hidden;
+	width:50px;
+}
+
+.library tbody tr:hover td {
+	/*background-color:#ddd;*/
+}
+
+.library tbody tr:hover .buttons form {
+	visibility:visible;
+}
+
+.library .buttons form {
+	margin:0px;
+}
+
+
+/*
+ * begin GNU FM player
+ */
+#player {
+	text-align:left;
+	margin:0px;
+	padding:0px;
+}
+.player-panel {
+	display:none;
+	width:300px;
+	border-radius:4px;
+	border:1px solid #CCC;
+	background-color:#EEE;
+	overflow:hidden;
+	padding:0px 3px;
+	-webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+	-moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+	background-image: -moz-linear-gradient(top, #ffffff, #f2f2f2);
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#f2f2f2));
+	background-image: -webkit-linear-gradient(top, #ffffff, #f2f2f2);
+	background-image: -o-linear-gradient(top, #ffffff, #f2f2f2);
+	background-image: linear-gradient(to bottom, #ffffff, #f2f2f2);
+	background-repeat: repeat-x;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#fff2f2f2', GradientType=0);
+}
+
+#artistname, #trackname {
+	font-weight:bold;
+}
+
+#progress {
+	clear:both;
+	width:100%;
+	height:10px;
+	margin-bottom:5px;
+}
+
+#infobox #tracktags ul {
+	display:inline;
+	padding:0px;
+	margin:0px;
+}
+#infobox .tunebutton {
+	cursor:pointer;
+	display:inline-block;
+	border-radius:2px;
+	margin:0px 2px;
+	color: rgb(14,144,210);
+}
+#infobox .tunebutton:hover {
+	background: rgb(14,144,210);
+	color:white;
+}
+
+#volume-box {
+	height: 20px;
+	margin-bottom:3px;
+}
+
+#p_buttons {
+	margin:3px 0px;
+}
+
+#tag_input {
+	margin-bottom: 3px;
+}
+
+#playlist {
+	border: 1px solid #CCC;
+	margin-bottom:3px;
+	padding:3px 0px 0px 5px;
+	background-color: #f7f7f7;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+}
+
+#songs {
+	margin: 0px;
+}
+
+/*
+ * end GNU FM player
+ */
+
+/*
+ * begin JQuery-UI widgets
+ * @todo needs clean-up
+ */
+.ui-widget {
+	font-family: Verdana,Arial,sans-serif;
+	font-size: 1.1em;
+}
+.ui-widget input, .ui-widget select, .ui-widget textarea, .ui-widget button {
+	font-family: Verdana,Arial,sans-serif;
+	font-size: 1em;
+}
+.ui-widget-content {
+	background: none repeat scroll 0 0 transparent;
+	border: 1px solid #CCC;
+	color: #222222;
+}
+.ui-widget-content a {
+	color: #222222;
+}
+.ui-corner-all {
+	border-radius: 4px 4px 4px 4px;
+}
+
+.ui-slider {
+	cursor:pointer;
+	position: relative;
+	text-align: left;
+
+	overflow: hidden;
+	height: 10px;
+	background-color: #f7f7f7;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+}
+.ui-slider .ui-slider-handle {
+	cursor: pointer;
+	position: absolute;
+	z-index: 2;
+}
+.ui-slider .ui-slider-range {
+	cursor:pointer;
+	border: 0 none;
+	display: block;
+	position: absolute;
+	z-index: 1;
+
+	width: 0%;
+	height: 100%;
+	color: #ffffff;
+	float: left;
+	font-size: 12px;
+	text-align: center;
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+	background-color: #0e90d2;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.ui-slider-horizontal {
+	height: 100%;
+}
+.ui-slider-horizontal .ui-slider-handle {
+	margin-left: -1px;
+	background-color:white;
+	width:1px;
+	height:100%;
+}
+.ui-slider-horizontal .ui-slider-range {
+	height: 100%;
+	top: 0;
+}
+.ui-slider-horizontal .ui-slider-range-min {
+	left: 0;
+}
+.ui-slider-horizontal .ui-slider-range-max {
+	right: 0;
+}
+.ui-slider-vertical {
+	height:100%;
+}
+.ui-slider-vertical .ui-slider-handle {
+	margin-bottom: -1px;
+	background-color:white;
+	height:1px;
+	width:100%;
+}
+.ui-slider-vertical .ui-slider-range {
+	left: 0;
+	width: 100%;
+}
+.ui-slider-vertical .ui-slider-range-min {
+	bottom: 0;
+}
+.ui-slider-vertical .ui-slider-range-max {
+	top: 0;
+}
+
+.search-result-head {
+  margin-bottom: 3px;
+  margin-top: 10px;
+  font-size: 16.099999999999998px;
+  font-weight: bold;
+  line-height: 1.4;
+}
+
+/*
+ * end JQuery-UI widgets
+ */
+
+/* Footer - adapted from <http://getbootstrap.com/examples/sticky-footer/>                                                     
+-------------------------------------------------- */
+
+html,
+body {
+  height: 100%;
+}
+
+#wrapper {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto -60px;
+  padding: 0 0 60px;
+}
+
+#footer {
+  height: auto;
+  background-color: #eeeeee;
+  border-top: 2px solid #eeeeee;
+  margin-top: 1.5em;
+}
+
+#footer .container p {
+    margin-bottom: 1.4em;
+}
+
+/* Move down content because we have a fixed navbar that is 50px tall */
+body {
+  padding-top: 7.375em;
+  padding-bottom: 20px;
+  font-family: "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+input,
+button,
+select,
+textarea {
+  font-family: "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.navbar-search .search-query {
+  font-family: "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+body#signin {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #eee;
+}
+
+.form-signin {
+  max-width: 330px;
+  padding: 15px;
+  margin: 0 auto;
+}
+.form-signin .form-signin-heading,
+.form-signin .checkbox {
+  margin-bottom: 10px;
+}
+.form-signin .checkbox {
+  font-weight: normal;
+}
+.form-signin .form-control {
+  position: relative;
+  font-size: 16px;
+  height: auto;
+  padding: 10px;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.form-signin .form-control:focus {
+  z-index: 2;
+}
+.form-signin input[type="text"] {
+  margin-bottom: -1px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+#loading.well {
+
+background: #eee url(../img/ajax.gif) center 80% no-repeat;
+padding-bottom: 10%;
+}
