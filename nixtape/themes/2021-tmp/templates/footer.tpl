@@ -40,6 +40,9 @@
      <p class="text-center">You have noticed some things are broken around here. Get in touch (mattl@cnuk.org) if things are really broken. Sorry.</p>
 
      <hr />
+     
+     <p class="text-center">You can get the source code to GNU FM from <a href="https://github.com/foocorp/gnu-fm">GitHub</a>, however now <a href="https://github.com/foocorp/hacienda">The Hacienda must be built</a></p>
+
 
      </div>
 
